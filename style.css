@@ -9,26 +9,27 @@ body {
 	max-height: 720px;
 }
 
-nav {
+a {
 	padding: 1rem;
 }
 
-header {
+nav {
 	display: flex;
 	flex-direction: row;
 	padding-left: 3.75rem;
 	padding-right: 3.75rem;
 }
 
-header > .item-icon {
+nav > .item-icon {
+	display:flex;
 	width: calc(1/6 * 100%);
 }
 
-header > .item-right {
+nav > .item-right {
 	display:flex;
 }
 
-header > .item-left {
+nav > .item-left {
 	display:flex;
 	margin-left: auto;
 }
@@ -38,7 +39,7 @@ header > .item-left {
 }
 
 @media (max-width: 1024px) {
-	header {
+	nav {
 		padding-left: 0;
 		padding-right: 0;
 	}
