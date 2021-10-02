@@ -7,8 +7,6 @@ body {
 	font-family: "Open Sans", sans-serif;
 	max-width: 1280px;
 	max-height: 720px;
-	min-width: 1024px;
-	min-height: 576px;
 }
 
 nav {
@@ -18,6 +16,8 @@ nav {
 header {
 	display: flex;
 	flex-direction: row;
+	padding-left: 3.75rem;
+	padding-right: 3.75rem;
 }
 
 header > .item-icon {
@@ -35,6 +35,13 @@ header > .item-left {
 
 .active-item {
 	background-color: #ECECEC;
+}
+
+@media (max-width: 1024px) {
+	header {
+		padding-left: 0;
+		padding-right: 0;
+	}
 }
 
 /*------Colors------*/
