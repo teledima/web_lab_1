@@ -2,17 +2,7 @@
 	box-sizing: border-box;
 }
 
-h1 {
-	margin-top: 0.25rem;
-	margin-bottom: 0.25rem;
-}
-
-h2 {
-	margin-top: 0.25rem;
-	margin-bottom: 0.25rem;
-}
-
-p {
+h1, h2, p {
 	margin-top: 0.25rem;
 	margin-bottom: 0.25rem;
 }
@@ -20,6 +10,7 @@ p {
 body {
 	margin: 0;
 	font-family: "Open Sans", sans-serif;
+	line-height: 1.25;
 	max-width: 1280px;
 	max-height: 720px;
 }
@@ -31,14 +22,40 @@ main {
 	padding-right: 3.5rem;
 }
 
+main > nav:first-child {
+	padding-left: 0;
+}
+
 section {
 	display: flex;
 	flex-direction: column;
-	padding-left: 1rem;
 }
 
 article {
 	margin-bottom: 1rem;
+}
+
+img {
+	border-radius: 50%;
+	padding-right: 0.25rem;
+	background-size:100% 100%;
+	width: 1.5rem;
+	height: 1.25rem;
+}
+
+time {
+	margin-left: auto;
+	align-self: flex-start;
+}
+
+footer {
+	text-align: center;
+}
+
+footer > p {
+	margin: 0;
+	padding-top: 1.5rem;
+	padding-bottom: 1.5rem;
 }
 
 nav {
@@ -54,6 +71,10 @@ nav.letters-navigation {
 	padding-left: 1rem;
 }
 
+nav.letters-navigation > a {
+	padding-right: 2.5rem;
+}
+
 nav > .item-icon, .item-letters, .letters-navigation {
 	width: calc(1/6 * 100%);
 }
@@ -62,8 +83,20 @@ nav > .item {
 	display:flex;
 }
 
-nav > .item-left {
+header > nav:first-child > div:last-child {
 	margin-left: auto;
+}
+
+header > nav:first-child > div:last-child > a:last-child {
+	padding-right: 0;
+}
+
+header > nav:first-child > div:first-child > a:first-child {
+	padding-left: 0;
+}
+
+header > nav:last-child > a:first-child {
+	padding-left: 0;
 }
 
 a, div.message {
@@ -79,29 +112,32 @@ a.incoming-letters {
 	padding-left: unset;
 }
 
-@media (max-width: 1024px) {
-	main {
-		padding-left: 0;
-		padding-right: 0;
-	}
+div.message-info {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
 
-	nav {
-		padding-left: 0;
-		padding-right: 0;
+@media (max-width: 1024px) {
+	header > nav {
+		padding-left: 1rem;
+		padding-right: 1rem;
 	}
 	
-	nav.letters-navigation {
+	main {
 		padding-left: 1rem;
 		padding-right: 1rem;
 	}
 }
 
 /*------Colors------*/
-.dark__back, article {
+/* Dark */
+article, header, footer, .active-letters-action {
 	background-color: #282E3A;
 }
 
-.light-gray__back {
+/* Light gray */
+.light-gray__back, main {
 	background-color: #ECECEC;
 }
 
@@ -109,7 +145,7 @@ a.incoming-letters {
 	color: #ECECEC;
 }
 
-.gray__font {
+.gray__font, body {
 	color: #96A1AB;
 }
 
@@ -126,7 +162,7 @@ a.incoming-letters {
 	font-size: 0.75rem;
 }
 
-.normal-text {
+.normal-text, body {
 	font-size: 16px;
 }
 
@@ -139,6 +175,6 @@ a.incoming-letters {
 	border-radius: 0.5rem;
 }
 
-.small-radius {
+.small-radius, .active-letters-action {
 	border-radius: 0.25rem;
 }
