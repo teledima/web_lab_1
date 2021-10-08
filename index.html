@@ -1,23 +1,22 @@
 <!DOCTYPE html>
 	<head>
 		<meta charset="utf-8">
-		<link rel="stylesheet" href="style.css">
 		<link rel="stylesheet" href="styles/index.css">
 	</head>
 	<body>
 		<header>
 			<div class="container">
 				<nav class="nav-head">
-					<div class="item item-icon">
-						Мини-почта
+					<div class="item-icon">
+						<p>Мини-почта</p>
 					</div>
 					<div class="item">
-						<a href="#" class="active-item">Письма</a>
-						<a href="#" class="normal-text">Написать</a>
+						<p class="active-item"><a href="#">Письма</a></p>
+						<p><a href="#">Написать</a></p>
 					</div>
-					<div class="item">
-						<a href="#">@username</a>
-						<a href="#">Выход</a>
+					<div class="item-right">
+						<p><a href="#">@username</a></p>
+						<p><a href="#">Выход</a></p>
 					</div>
 				</nav>
 			</div>
@@ -31,9 +30,9 @@
 				<div class="main-content">
 					<nav class="letters-navigation">
 						<ul>
-							<li> <a href="#">Непрочитанные</a> </li>
-							<li class="active-letters-action"> <a href="#">Входящие</a> </li>
-							<li> <a href="#">Отправленные</a> </li>
+							<li> <p> <a href="#">Непрочитанные</a> </p> </li>
+							<li class="active-letters-action"> <p> <a href="#">Входящие</a> </p></li>
+							<li> <p> <a href="#">Отправленные</a> </p> </li>
 						</ul>
 					</nav>
 					<section>
@@ -57,7 +56,7 @@
 									<time datetime="2020-08-28">28.08.2020</time>
 								</div>
 								<h2>Красная точка</h2>
-								<p>Всем мяу! Сегодня утром была найдена красная точка на кухне. Я гналась за ней больше часа, но она сбежала. Продолжаю наблюдение. в этот раз она не уйдёт Думаю, надо ещё раз проверить под холодильником. Всё, я убежала, тут опять бегает солнечное пятно!</p>
+								<p>Всем мяу! Сегодня утром была найдена красная точка на кухне. Я гналась за ней больше часа, но она сбежала. Продолжаю наблюдение. В этот раз она не уйдёт. Думаю, надо ещё раз проверить под холодильником. Всё, я убежала, тут опять бегает солнечное пятно!</p>
 							</div>
 						</article>
 						
@@ -77,7 +76,34 @@
 			</div>
 		</main>
 		<footer>
-			<p>(C) Курс Web-программирования | ПГНИУ</p>
+			<div class="container footer__div">
+				<p>(C) Курс Web-программирования | ПГНИУ</p>
+			</div>
 		</footer>
+		
+		<!-- for debug
+		<div class="grid">
+			<div class="grid__column">
+				<div class="grid__sub-column" style="left: -1rem"></div>
+				<div class="grid__sub-column" style="left: 0"></div>
+			</div>
+			<div class="grid__column"></div>
+			<div class="grid__column">
+				<div class="grid__sub-column" style="left: 0"></div>
+			</div>
+			<div class="grid__column"></div>
+			<div class="grid__column"></div>
+			<div class="grid__column"></div>
+			<div class="grid__column"></div>
+			<div class="grid__column"></div>
+			<div class="grid__column"></div>
+			<div class="grid__column"></div>
+			<div class="grid__column"></div>
+			<div class="grid__column">
+				<div class="grid__sub-column" style="right: 0"></div>
+				<div class="grid__sub-column" style="right: -1rem"></div>
+			</div>
+		</div>
+		-->
 	</body>
 </html>
